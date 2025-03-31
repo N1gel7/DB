@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Company Logo" class="logo">
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#Order">Order</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Deli Bites</h1>
+        <p>Start your day right with a healthy breakfast!</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We provide university students and faculty with healthy breakfasts by partnering with local vendors.</p>
+    </section>
+
+    <section id="menu" class="featured-breakfast">
+        <h2>Featured Breakfast Options</h2>
+        
+        <h3>Drinks and Beverages</h3>
+        <div class="breakfast-options">
+            <div class="breakfast-item">
+                <img src="images/milo.jpeg" alt="Milo">
+                <div class="description">
+                    <h3>Milo</h3>
+                    <p>Hot Milo drink.</p>
+                    <p class="price">GHC4.50</p>
+                </div>
+            </div>
+            <div class="breakfast-item">
+                <img src="images/hausa koko.jpg" alt="Hausa Koko">
+                <div class="description">
+                    <h3>Hausa Koko</h3>
+                    <p>Traditional Ghanaian porridge.</p>
+                    <p class="price">GHC7.00</p>
+                </div>
+            </div>
+            <div class="breakfast-item">
+                <img src="images/fruit juice.jpeg" alt="Fruit Juice">
+                <div class="description">
+                    <h3>Fruit Juice</h3>
+                    <p>Freshly squeezed fruit juice.</p>
+                    <p class="price">GHC11.00</p>
+                </div>
+            </div>
+            <div class="breakfast-item">
+                <img src="images/tom brown.jpeg" alt="Tom Brown">
+                <div class="description">
+                    <h3>Tom Brown</h3>
+                    <p>Nutritious Tom Brown porridge.</p>
+                    <p class="price">GHC13.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="images/Alosius.jpg" alt="Customer 1" class="testimonial-img">
+                <blockquote>
+                    "This is the best breakfast service I've ever used! Fresh and delicious every time."
+                </blockquote>
+                <p class="customer-name">- Alosius Akonteh, Student</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/LUKUMANI.jpg" alt="Customer 2" class="testimonial-img">
+                <blockquote>
+                    "Convenient and always on time. Highly recommend to all students!"
+                </blockquote>
+                <p class="customer-name">- LUKUMANI CYANANDARO, Student</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/emmanuel.jpg" alt="Customer 2" class="testimonial-img">
+                <blockquote>
+                    "Convenient and always on time. Highly recommend to all students!"
+                </blockquote>
+                <p class="customer-name">- LUKUMANI CYANANDARO, Student</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="Order" class="Order">
+        <h2>Place Order</h2>
+        <form id="orderForm" action="/submit-order" method="post">
+            <h3>Standalone Meals</h3>
+            <label>
+                <input type="checkbox" name="standalone_meals" value="Bread"> Bread
+            </label>
+            <input type="number" name="bread_qty" min="1" placeholder="Qty">
+    
+            <label>
+                <input type="checkbox" name="standalone_meals" value="Sandwich"> Sandwich
+            </label>
+            <input type="number" name="sandwich_qty" min="1" placeholder="Qty">
+    
+            <h3>Combo Meals</h3>
+            <label>
+                <input type="checkbox" name="combo_meals" value="burger_fries"> Burger + Fries
+            </label>
+            <input type="number" name="burger_fries_qty" min="1" placeholder="Qty">
+    
+            <label>
+                <input type="checkbox" name="combo_meals" value="pizza_drink"> Pizza + Drink
+            </label>
+            <input type="number" name="pizza_drink_qty" min="1" placeholder="Qty">
+    
+            <h2>Contact Information</h2>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+    
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="last_name" required>
+    
+            <label for="number">Phone Number:</label>
+            <input type="number" id="number" name="phone_number" required>
+    
+            <div class="button-container">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    
+    
+    
+   
+    
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +233533578620</p>
+        <div class="social-media">
+            <a href="https://www.snapchat.com/add/delibites24">
+                <img src="images/snap.png" alt="Snapchat"> @delibites24
+            </a>
+            <a href="https://www.instagram.com/delibites24">
+                <img src="images/ig.jpeg" alt="Instagram"> @delibites24
+            </a>
+        </div>
+    </footer>
+
+</body>
+<script src="/script.js"></script>
+</html>
